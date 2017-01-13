@@ -1,12 +1,12 @@
 activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
-  # blog.prefix = "blog"
+  blog.prefix = "blog"
 
-  blog.permalink = "{year}/{month}/{day}/{title}.html"
+  blog.permalink = "{title}.html"
   # Matcher for blog source files
   blog.sources = "posts/{year}-{month}-{day}-{title}.html"
   # blog.taglink = "tags/{tag}.html"
-  # blog.layout = "layout"
+  # blog.layout = "bloglayout"
   # blog.summary_separator = /(READMORE)/
   blog.summary_length = 250
   # blog.year_link = "{year}.html"
@@ -14,8 +14,8 @@ activate :blog do |blog|
   # blog.day_link = "{year}/{month}/{day}.html"
   # blog.default_extension = ".markdown"
   blog.new_article_template = "source/blog-template/template.erb"
-  blog.tag_template = "tag.html"
-  blog.calendar_template = "calendar.html"
+  # blog.tag_template = "tag.html"
+  # blog.calendar_template = "calendar.html"
 
   # Enable pagination
   # blog.paginate = true
@@ -25,6 +25,8 @@ end
 page "/feed.xml", layout: false
 page '/sitemap.xml', layout: false
 page '/robots.txt', layout: false
+
+activate :directory_indexes
 ###
 # Compass
 ###
