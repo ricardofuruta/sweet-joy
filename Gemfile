@@ -12,3 +12,5 @@ gem 'font-awesome-sass', '4.5.0'
 gem 'middleman-autoprefixer'
 
 gem "middleman-blog"
+
+gem 'middleman-dragonfly_thumbnailer'

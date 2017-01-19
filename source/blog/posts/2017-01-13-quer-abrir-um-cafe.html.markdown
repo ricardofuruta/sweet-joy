@@ -11,6 +11,7 @@ tags: empreendedorismo, café, negócio
 
 ## Seja atrativo
 É fundamental entender quais são as necessidades que os consumidores têm. Seguir as novas tendências do mercado é uma ótima saída para oferecer o que o público precisa, mas tome os devidos cuidados para não apresentar apenas mais do mesmo. Procure sempre trazer um diferencial, algo que dará um toque especial ao seu negócio.
+![alt text](bolochocolate.jpg)
 
 # De olho no lucro
 Um dos principais erros que pode afundar um negócio próprio é não aproveitar de forma correta o lucro do novo trabalho. Antes de tudo, é importante estar ciente que o retorno financeiro não será imediato. Porém, na hora que isso acontecer, não comece a gastar sem planejamento. Sempre faça uma reserva para investir em melhorias e também em caso de possíveis emergências.

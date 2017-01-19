@@ -84,7 +84,7 @@ _________________________________________________________ -->
                         <div class="icon">
                             <i class="fa fa-birthday-cake"></i>
                         </div>
-                        <h3>Encomenda de Bolos</h3>
+                        <h3>Encomenda de Doces</h3>
                         <p>Brigadeiros, bolos e outros docinhos para festa. Faça sua encomenda</p>
                     </div>
                 </div>
@@ -141,7 +141,7 @@ _________________________________________________________ -->
             </div>
 
             <p class="lead">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies
-                mi vitae est. Mauris placerat eleifend leo. <span class="accent">Check our blog!</span>
+                mi vitae est. Mauris placerat eleifend leo. <span class="accent">Confira nosso blog!</span>
             </p>
 
             <!-- *** BLOG HOMEPAGE ***
@@ -151,21 +151,24 @@ _________________________________________________________ -->
 
                 <% blog.articles[0..3].each do |article| %>
 
-                  <div class="col-md-3 col-sm-6">
+                  <div class="col-md-3">
                       <div class="box-image-text blog">
                           <div class="top">
                               <div class="image">
-                                  <%= image_tag article.data.image, class:"img-responsive" %>
+                                  <%= thumb_tag article.data.image, '690x460#', class:"img-responsive" %>
                               </div>
                               <div class="bg"></div>
                               <div class="text">
                                   <p class="buttons">
-                                      <a href="blog-post.html" class="btn btn-template-transparent-primary"><i class="fa fa-link"></i> Leia Mais</a>
+                                     <!--  <a href="blog-post.html" class="btn btn-template-transparent-primary"><i class="fa fa-link"></i> Leia Mais</a> -->
+                                    <% link_to article.url, class:"btn btn-template-transparent-primary" do %>
+                                      <i class="fa fa-link"></i> Leia Mais
+                                    <% end %>
                                   </p>
                               </div>
                           </div>
                           <div class="content">
-                              <h4><a href="blog-post.html"><%= article.title %></a></h4>
+                              <h4><%= link_to article.title, article.url %></h4>
                               <p class="author-category">Por <a href=""><%= article.data.autor %></a> em <a href="blog.html"> <%=article.data.categoria%></a>
                               </p>
                               <p class="intro"><%=article.data.textointro%></p>
