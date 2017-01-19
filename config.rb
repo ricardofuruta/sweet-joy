@@ -1,3 +1,60 @@
+activate :blog do |blog|
+  # This will add a prefix to all links, template references and source paths
+  blog.name = "blog"
+  blog.prefix = "blog"
+
+  blog.permalink = "{title}.html"
+  # Matcher for blog source files
+  blog.sources = "posts/{day}-{month}-{year}-{title}.html"
+  # blog.taglink = "tags/{tag}.html"
+  blog.layout = "blog_layout"
+  # blog.summary_separator = /(READMORE)/
+  blog.summary_length = 250
+  # blog.year_link = "{year}.html"
+  # blog.month_link = "{year}/{month}.html"
+  # blog.day_link = "{year}/{month}/{day}.html"
+  # blog.default_extension = ".markdown"
+  blog.new_article_template = "source/templates/blog_template.erb"
+  # blog.tag_template = "tag.html"
+  # blog.calendar_template = "calendar.html"
+
+  # Enable pagination
+  # blog.paginate = true
+  # blog.per_page = 10
+  # blog.page_link = "page/{num}"
+end
+activate :blog do |blog|
+  # This will add a prefix to all links, template references and source paths
+  blog.name = "produtos"
+  blog.prefix = "produtos"
+
+  blog.permalink = "produtos/{categoria}/{title}.html"
+  # Matcher for blog source files
+  blog.sources = "data/{day}-{month}-{year}-{title}.html"
+  # blog.taglink = "tags/{tag}.html"
+  blog.layout = "produto_layout"
+  # blog.summary_separator = /(READMORE)/
+  blog.summary_length = 250
+  # blog.year_link = "{year}.html"
+  # blog.month_link = "{year}/{month}.html"
+  # blog.day_link = "{year}/{month}/{day}.html"
+  # blog.default_extension = ".markdown"
+  blog.new_article_template = "source/blog-template/product_template.erb"
+  # blog.tag_template = "tag.html"
+  # blog.calendar_template = "calendar.html"
+
+  # Enable pagination
+  # blog.paginate = true
+  # blog.per_page = 10
+  # blog.page_link = "page/{num}"
+end
+page "/feed.xml", layout: false
+page '/sitemap.xml', layout: false
+page '/robots.txt', layout: false
+
+activate :directory_indexes
+
+activate :dragonfly_thumbnailer
 ###
 # Compass
 ###
@@ -16,8 +73,11 @@ activate :autoprefixer
 
 # Per-page layout changes:
 #
-# With no layout
-# page "/path/to/file.html", :layout => false
+# # With no layout
+page '/*.xml', layout: false
+page '/*.json', layout: false
+page '/*.txt', layout: false
+
 #
 # With alternative layout
 # page "/path/to/file.html", :layout => :otherlayout
@@ -50,7 +110,7 @@ activate :autoprefixer
 #   end
 # end
 
-set :css_dir, 'stylesheets'
+set :css_dir  , 'stylesheets'
 
 set :js_dir, 'javascripts'
 
@@ -89,3 +149,8 @@ activate :deploy do |deploy|
   # deploy.strategy = :submodule # commit strategy: can be :force_push or :submodule, default: :force_push
   # deploy.commit_message = 'custom-message' # commit message (can be empty), default: Automated commit at `timestamp` by middleman-deploy `version`
 end
+
+# With no layout
+page '/*.xml', layout: false
+page '/*.json', layout: false
+page '/*.txt', layout: false

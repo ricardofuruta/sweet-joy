@@ -12,7 +12,7 @@ _________________________________________________________ -->
 
         <div class="container full-width">
             <div class="homepage owl-carousel">
-                <div class="item item-carousel" style="background: url('assets/photogrid.jpg') center center repeat;background-size: cover">
+                <div class="item item-carousel" style="background: url('/images/brigadeiros.jpg') center center repeat;background-size: cover">
                     <div class="row">
                         <div class="col-sm-5 text-center">
                             <p>
@@ -28,7 +28,7 @@ _________________________________________________________ -->
                         </div>
                     </div>
                 </div>
-                <div class="item item-carousel" style="background: url('assets/mesa-festa.jpg') center center repeat;background-size: cover"">
+                <div class="item item-carousel" style="background: url('images/mesa-festa.jpg') center center repeat;background-size: cover"">
                     <div class="row">
 
                         <div class="col-sm-3 text-center">
@@ -43,7 +43,7 @@ _________________________________________________________ -->
 
                     </div>
                 </div>
-                <div class="item item-carousel" style="background: url('assets/bolokitkat.jpg') center center repeat;background-size: cover"">
+                <div class="item item-carousel" style="background: url('images/bolokitkat.jpg') center center repeat;background-size: cover"">
                     <div class="row">
                         <div class="col-sm-5 text-center">
                             <h1 class="item1">Bolos</h1>
@@ -55,7 +55,7 @@ _________________________________________________________ -->
                         </div>
                     </div>
                 </div>
-                <div class="item item-carousel" style="background: url('assets/cursos.jpg') center center repeat;background-size: cover"">
+                <div class="item item-carousel" style="background: url('images/cursos.jpg') center center repeat;background-size: cover"">
                     <div class="row">
                         <div class="col-sm-7">
                             <!-- <img class="img-responsive" src="img/template-easy-code.png" alt=""> -->
@@ -84,7 +84,7 @@ _________________________________________________________ -->
                         <div class="icon">
                             <i class="fa fa-birthday-cake"></i>
                         </div>
-                        <h3>Encomenda de Bolos</h3>
+                        <h3>Encomenda de Doces</h3>
                         <p>Brigadeiros, bolos e outros docinhos para festa. Faça sua encomenda</p>
                     </div>
                 </div>
@@ -141,126 +141,50 @@ _________________________________________________________ -->
             </div>
 
             <p class="lead">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies
-                mi vitae est. Mauris placerat eleifend leo. <span class="accent">Check our blog!</span>
+                mi vitae est. Mauris placerat eleifend leo. <span class="accent">Confira nosso blog!</span>
             </p>
 
             <!-- *** BLOG HOMEPAGE ***
 _________________________________________________________ -->
 
             <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    <div class="box-image-text blog">
-                        <div class="top">
-                            <div class="image">
-                                <!-- <img src="img/portfolio-4.jpg" alt="" class="img-responsive"> -->
-                                <%= image_tag "portfolio-4.jpg", class:"img-responsive" %>
-                            </div>
-                            <div class="bg"></div>
-                            <div class="text">
-                                <p class="buttons">
-                                    <a href="blog-post.html" class="btn btn-template-transparent-primary"><i class="fa fa-link"></i> Read more</a>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <h4><a href="blog-post.html">Fashion now</a></h4>
-                            <p class="author-category">By <a href="#">John Snow</a> in <a href="blog.html">Webdesign</a>
-                            </p>
-                            <p class="intro">Fifth abundantly made Give sixth hath. Cattle creature i be don't them behold green moved fowl Moved life us beast good yielding. Have bring.</p>
-                            <p class="read-more"><a href="blog-post.html" class="btn btn-template-main">Continue reading</a>
-                            </p>
-                        </div>
-                    </div>
-                    <!-- /.box-image-text -->
 
-                </div>
+                <% blog.articles[0..3].each do |article| %>
 
-                <div class="col-md-3 col-sm-6">
-                    <div class="box-image-text blog">
-                        <div class="top">
-                            <div class="image">
-                                <!-- <img src="img/portfolio-3.jpg" alt="" class="img-responsive"> -->
-                                <%= image_tag "portfolio-3.jpg", class:"img-responsive" %>
-                            </div>
-                            <div class="bg"></div>
-                            <div class="text">
-                                <p class="buttons">
-                                    <a href="blog-post.html" class="btn btn-template-transparent-primary"><i class="fa fa-link"></i> Read more</a>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <h4><a href="blog-post.html">Fashion now</a></h4>
-                            <p class="author-category">By <a href="#">John Snow</a> in <a href="blog.html">Webdesign</a>
-                            </p>
-                            <p class="intro">Fifth abundantly made Give sixth hath. Cattle creature i be don't them behold green moved fowl Moved life us beast good yielding. Have bring.</p>
-                            <p class="read-more"><a href="blog-post.html" class="btn btn-template-main">Continue reading</a>
-                            </p>
-                        </div>
-                    </div>
-                    <!-- /.box-image-text -->
+                  <div class="col-md-3">
+                      <div class="box-image-text blog">
+                          <div class="top">
+                              <div class="image">
+                                  <%= thumb_tag article.data.image, '690x460#', class:"img-responsive" %>
+                              </div>
+                              <div class="bg"></div>
+                              <div class="text">
+                                  <p class="buttons">
+                                     <!--  <a href="blog-post.html" class="btn btn-template-transparent-primary"><i class="fa fa-link"></i> Leia Mais</a> -->
+                                    <% link_to article.url, class:"btn btn-template-transparent-primary" do %>
+                                      <i class="fa fa-link"></i> Leia Mais
+                                    <% end %>
+                                  </p>
+                              </div>
+                          </div>
+                          <div class="content">
+                              <h4><%= link_to article.title, article.url %></h4>
+                              <p class="author-category">Por <a href=""><%= article.data.autor %></a> em <a href="blog.html"> <%=article.data.categoria%></a>
+                              </p>
+                              <p class="intro"><%=article.data.textointro%></p>
+                              <p class="read-more">
+                                <%= link_to "Continue lendo", article.url, class:"btn btn-template-main" %>
+                              </p>
+                          </div>
+                      </div>
+                      <!-- /.box-image-text -->
 
-                </div>
-
-                <div class="col-md-3 col-sm-6">
-                    <div class="box-image-text blog">
-                        <div class="top">
-                            <div class="image">
-                                <!-- <img src="img/portfolio-5.jpg" alt="" class="img-responsive"> -->
-                                <%= image_tag "portfolio-5.jpg", class:"img-responsive" %>
-                            </div>
-                            <div class="bg"></div>
-                            <div class="text">
-                                <p class="buttons">
-                                    <a href="blog-post.html" class="btn btn-template-transparent-primary"><i class="fa fa-link"></i> Read more</a>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <h4><a href="blog-post.html">What to do</a></h4>
-                            <p class="author-category">By <a href="#">John Snow</a> in <a href="blog.html">Webdesign</a>
-                            </p>
-                            <p class="intro">Fifth abundantly made Give sixth hath. Cattle creature i be don't them behold green moved fowl Moved life us beast good yielding. Have bring.</p>
-                            <p class="read-more"><a href="blog-post.html" class="btn btn-template-main">Continue reading</a>
-                            </p>
-                        </div>
-                    </div>
-                    <!-- /.box-image-text -->
-
-                </div>
-
-                <div class="col-md-3 col-sm-6">
-                    <div class="box-image-text blog">
-                        <div class="top">
-                            <div class="image">
-                                <!-- <img src="img/portfolio-6.jpg" alt="" class="img-responsive"> -->
-                                <%= image_tag "portfolio-6.jpg", class:"img-responsive" %>
-                            </div>
-                            <div class="bg"></div>
-                            <div class="text">
-                                <p class="buttons">
-                                    <a href="blog-post.html" class="btn btn-template-transparent-primary"><i class="fa fa-link"></i> Read more</a>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <h4><a href="blog-post.html">5 ways to look awesome</a></h4>
-                            <p class="author-category">By <a href="#">John Snow</a> in <a href="blog.html">Webdesign</a>
-                            </p>
-                            <p class="intro">Am terminated it excellence invitation projection as. She graceful shy believed distance use nay. Lively is people.</p>
-                            <p class="read-more"><a href="blog-post.html" class="btn btn-template-main">Continue reading</a>
-                            </p>
-                        </div>
-                    </div>
-                    <!-- /.box-image-text -->
-
-                </div>
+                  </div>
+                <% end %>
 
             </div>
             <!-- /.row -->
-
             <!-- *** BLOG HOMEPAGE END *** -->
-
         </div>
 
     </div>
