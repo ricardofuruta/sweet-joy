@@ -1,5 +1,6 @@
 ---
 title: Os 5 Melhores Cafés de Curitiba
+blog: blog
 data: 2017-01-13 13:50 UTC
 youtubecode:
 textointro: "Selecionamos 05 locais imperdíveis em Curitiba para os amantes da gastronomia."
@@ -7,6 +8,7 @@ image: "sweet-joy-cafe-confeitaria.jpg"
 autor: "Joy Alves"
 categoria: Avaliações
 tags: avaliação, review, cafe, curitiba, melhores
+published: true
 ---
 
 1. C La Vie Brasserie

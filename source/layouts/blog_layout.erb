@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="brigadeiros bolos festa doces confeitaria">
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "Sweet Joy por Joy Alves" %></title>
+    <title><%= "#{current_page.data.autor}: #{current_page.data.title}" || "Sweet Joy por Joy Alves" %></title>
 
     <%= stylesheet_link_tag "all" %>
 

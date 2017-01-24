@@ -1,0 +1,168 @@
+<div id="heading-breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <h1>Nossos Produtos</h1>
+            </div>
+            <div class="col-md-5">
+                <ul class="breadcrumb">
+                    <li><a href="index.html">Home</a>
+                    </li>
+                    <li>Nossos Produtos</li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="content">
+    <div class="container">
+
+        <section>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="heading">
+                        <h2>Faça já sua encomenda</h2>
+                    </div>
+
+                    <p class="lead"><i class="fa fa-whatsapp" aria-hidden="true"></i> 41 96937334</p>
+                </div>
+            </div>
+
+            <div class="row portfolio">
+
+                <div class="col-sm-6 col-md-3">
+                    <div class="box-image">
+                        <div class="image">
+                            <%= thumb_tag 'bolokitkat.jpg','750x500#', class:"img-responsive" %>
+                        </div>
+                        <div class="bg"></div>
+                        <div class="name">
+                            <h3><%= link_to "Bolos", categoria_path("bolos",'produtos')%></h3>
+                        </div>
+                        <div class="text">
+                            <p class="hidden-sm hidden-lg hidden-md">Os mais deliciosos bolos da cidade irão fazer da sua festa um sucesso.</p>
+                            <p class="buttons">
+                                <%= link_to 'Confira', categoria_path('bolos','produtos'), class:"btn btn-template-transparent-primary" %>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- /.box-image -->
+
+                </div>
+
+                <div class="col-sm-6 col-md-3">
+                    <div class="box-image">
+                        <div class="image">
+                            <%= thumb_tag 'brigadeiros.jpg', '750x500#', class:"img-responsive" %>
+                        </div>
+                        <div class="bg"></div>
+                        <div class="name">
+                            <h3><%= link_to "Brigadeiros", categoria_path("brigadeiros",'produtos')%></h3>
+                        </div>
+                        <div class="text">
+                            <p class="hidden-sm hidden-lg hidden-md">Escolha até cinco sabores diferentes de brigadeiro e monte sua caixa.</p>
+                            <p class="buttons">
+                                <%= link_to 'Confira', categoria_path('brigadeiros','produtos'), class:"btn btn-template-transparent-primary" %>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- /.box-image -->
+
+                </div>
+
+                <div class="col-sm-6 col-md-3">
+                    <div class="box-image">
+                        <div class="image">
+                            <%= thumb_tag 'cursos.jpg','750x500#', class:"img-responsive" %>
+                        </div>
+                        <div class="bg"></div>
+                        <div class="name">
+                            <h3><%= link_to "Cursos", categoria_path("cursos",'produtos')%></h3>
+                        </div>
+                        <div class="text">
+                            <p class="hidden-sm hidden-lg hidden-md">Desenvolva técnicas avançadas e torne-se um mestre na confeitaria.</p>
+                            <p class="buttons">
+                                <%= link_to 'Confira', categoria_path('cursos','produtos'), class:"btn btn-template-transparent-primary" %>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- /.box-image -->
+
+                </div>
+
+                <div class="col-sm-6 col-md-3">
+                    <div class="box-image">
+                        <div class="image">
+                            <%= thumb_tag 'mesa-festa.jpg','750x500#', class:"img-responsive" %>
+                        </div>
+                        <div class="bg"></div>
+                        <div class="name">
+                            <h3><%= link_to "Lembrancinhas", categoria_path("lembrancinhas",'produtos')%></h3>
+                        </div>
+                        <div class="text">
+                            <p class="hidden-sm hidden-lg hidden-md">Surpreenda seus convidados com as lembrancinhas mais gostosas.</p>
+                            <p class="buttons">
+                                <%= link_to 'Confira', categoria_path('lembrancinhas','produtos'), class:"btn btn-template-transparent-primary" %>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- /.box-image -->
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+    <!-- /.container -->
+
+    <section class="bar background-pentagon no-mb">
+        <div class="container">
+            <div class="row showcase">
+                <div class="col-md-3 col-sm-6">
+                    <div class="item">
+                        <div class="icon"><i class="fa fa-align-justify"></i>
+                        </div>
+                        <h4><span class="counter">580</span><br>
+
+Brigadeiros</h4>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="item">
+                        <div class="icon"><i class="fa fa-users"></i>
+                        </div>
+                        <h4><span class="counter">100</span><br>
+
+Bolos</h4>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="item">
+                        <div class="icon"><i class="fa fa-copy"></i>
+                        </div>
+                        <h4><span class="counter">320</span><br>
+
+Cursos</h4>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="item">
+                        <div class="icon"><i class="fa fa-font"></i>
+                        </div>
+                        <h4><span class="counter">923</span><br>
+
+Clientes Satisfeitos</h4>
+                    </div>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.bar -->
+</div>
+

@@ -1,5 +1,3 @@
-/*universal default css*/
-
 .clearfix:before,
 .clearfix:after,
 .navbar:before,
@@ -64,6 +62,54 @@ button i.fa {
 .clickable {
   cursor: pointer !important;
 }
+.required {
+  color: $brand-color;
+}
+.accent {
+  color: $brand-color;
+}
+.text-uppercase {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+@media (max-width: 991px) {
+  .text-center-sm {
+    text-align: center;
+  }
+}
+p.lead {
+  margin-bottom: 40px;
+}
+section,
+div.section {
+  margin-bottom: 40px;
+}
+.no-mb {
+  margin-bottom: 0 !important;
+}
+.mb-small {
+  margin-bottom: 20px !important;
+}
+.heading {
+  margin-bottom: 40px;
+}
+.heading h1,
+.heading h2,
+.heading h3,
+.heading h4,
+.heading h5 {
+  display: inline-block;
+  border-bottom: solid 5px $brand-color;
+  line-height: 1.1;
+  margin-bottom: 0;
+  padding-bottom: 10px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.heading h1 i.fa,
+.heading h2 i.fa,
+.heading h3 i.fa,
 .heading h4 i.fa,
 .heading h5 i.fa {
   display: inline-block;
@@ -86,6 +132,35 @@ button i.fa {
   border-radius: 40px;
   border: solid 1px #fff;
   font-size: 20px;
+}
+.icon.icon-lg {
+  font-size: 30px;
+  border-width: 2px;
+}
+.ul-icons {
+  padding-left: 10px;
+}
+.ul-icons li {
+  list-style-type: none;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+.ul-icons li i {
+  width: 20px;
+  height: 20px;
+  background: $brand-color;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  line-height: 20px;
+  margin-right: 10px;
+}
+ul.list-style-none {
+  list-style: none;
+}
+#text-page h1,
+#text-page h2,
+#text-page h3 {
   font-weight: 700;
 }
 #error-page {
@@ -242,7 +317,7 @@ button i.fa {
 .navbar ul.nav > li.active > a,
 .navbar ul.nav > li.open > a {
   text-decoration: none !important;
-  border-top: solid 5px #FF2E00;
+  border-top: solid 5px #20616d;
 }
 @media (max-width: 768px) {
   .navbar ul.nav > li.active > a,
@@ -254,12 +329,12 @@ button i.fa {
   }
 }
 .navbar.navbar-light ul.nav > li.active > a {
-  border-top: solid 5px #FF2E00;
+  border-top: solid 5px #20616d;
   background: #fff !important;
   color: #555555 !important;
 }
 .navbar.navbar-light ul.nav > li.active > a:hover {
-  border-top: solid 5px #FF2E00;
+  border-top: solid 5px #20616d;
 }
 .navbar.navbar-light ul.nav > li > a:hover,
 .navbar.navbar-light ul.nav > li.open > a:hover,
@@ -440,7 +515,7 @@ body.boxed .navbar-affixed-top.affix {
 /* buttons  */
 .btn {
   font-weight: 700;
-  font-family: $base-font, Helvetica, Arial, sans-serif;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   padding: 6px 12px;
@@ -658,14 +733,14 @@ fieldset[disabled] .btn-template-primary.active {
   background-color: #ffffff;
 }
 #intro {
-  background: url('home.jpg') no-repeat center top;
+  background: url('../img/home.jpg') no-repeat center top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 #intro .item {
-  font-family: $base-font, Helvetica, Arial, sans-serif;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
   height: 100%;
 }
 #intro .item h1 {
@@ -718,7 +793,7 @@ fieldset[disabled] .btn-template-primary.active {
   padding: 30px;
   margin-bottom: 0;
   position: relative;
-  background-image: url(asset-path('photogrid.jpg')) center center repeat;
+  background: url('../img/photogrid.jpg') center center repeat;
   background-size: cover;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
@@ -863,7 +938,7 @@ fieldset[disabled] .btn-template-primary.active {
   letter-spacing: 0.08em;
 }
 .panel.sidebar-menu ul.nav.category-menu li a {
-  font-family: $base-font, Helvetica, Arial, sans-serif;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
 }
 .panel.sidebar-menu ul.nav ul {
   list-style: none;
@@ -999,7 +1074,7 @@ fieldset[disabled] .btn-template-primary.active {
   margin: 30px 10px 10px -71px;
   color: #fff;
   background-color: $brand-color;
-  font-family: $base-font, Helvetica, Arial, sans-serif;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
 }
 .ribbon .theribbon:before,
 .ribbon .theribbon:after {
@@ -1038,11 +1113,6 @@ fieldset[disabled] .btn-template-primary.active {
 .ribbon.gift .theribbon:after {
   border-color: #357935 #357935 transparent transparent;
 }
-.full-width {
-  width: 100%;
-  padding-left: 0px;
-  padding-right: 0px;
-}
 .owl-carousel .owl-controls .owl-page.active span,
 .owl-theme .owl-controls .owl-page.active span,
 .owl-carousel .owl-controls.clickable .owl-page:hover span,
@@ -1073,7 +1143,7 @@ fieldset[disabled] .btn-template-primary.active {
 }
 .home-carousel {
   position: relative;
-  // background: url('photogrid.jpg') center center repeat;
+  // background: url('../img/photogrid.jpg') center center repeat;
   // background-size: cover;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
@@ -1089,8 +1159,13 @@ fieldset[disabled] .btn-template-primary.active {
   opacity: 0.9;
   filter: alpha(opacity=90);
 }
+.full-width {
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+}
 // .home-carousel .owl-carousel {
-//   padding-top: 60px;
+//   padding-top: 20px;
 //   padding-bottom: 20px;
 // }
 .home-carousel .owl-theme .owl-controls .owl-page span {
@@ -1372,11 +1447,11 @@ fieldset[disabled] .btn-template-primary.active {
 }
 .box-simple h3 {
   font-weight: normal;
-  font-size: 20px;
+  font-size: 18px;
   text-transform: uppercase;
   line-height: 1.5;
   color: #555555;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 0.08em;
 }
 .box-simple h3 a {
@@ -1460,7 +1535,7 @@ fieldset[disabled] .btn-template-primary.active {
 .box-image .name h3 {
   color: #fff;
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 18px;
   letter-spacing: 0.08em;
 }
 .box-image .name h3 a {
@@ -1565,7 +1640,7 @@ fieldset[disabled] .btn-template-primary.active {
   text-transform: uppercase;
   line-height: 1.5;
   color: #555555;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 0.08em;
 }
 .box-image-text .content p {
@@ -1656,7 +1731,7 @@ fieldset[disabled] .btn-template-primary.active {
   border: none;
 }
 #heading-breadcrumbs {
-  background: url('texture-bw.png') center center repeat;
+  background: url('../img/texture-bw.png') center center repeat;
   padding: 20px 0;
   margin-bottom: 40px;
 }
@@ -1682,10 +1757,10 @@ fieldset[disabled] .btn-template-primary.active {
 .bar {
   position: relative;
   background: $brand-color;
-  padding: 15px 0;
+  padding: 60px 0;
 }
 .bar.background-pentagon {
-  background: url('texture-bw.png') center center repeat;
+  background: url('../img/texture-bw.png') center center repeat;
   border-top: solid 1px #999999;
   border-bottom: solid 1px #999999;
 }
@@ -1699,12 +1774,12 @@ fieldset[disabled] .btn-template-primary.active {
   background: #fff;
 }
 .bar.background-image-fixed-1 {
-  background: url('../images/bolokitkat2.jpg') center top no-repeat;
+  background: url("../images/bolokitkat2.jpg") center top no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
 .bar.background-image-fixed-2 {
-  background: url('../images/bolokitkat2.jpg') center top no-repeat;
+  background: url("../images/bolokitkat2.jpg") center top no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
@@ -1930,7 +2005,7 @@ fieldset[disabled] .btn-template-primary.active {
 }
 #blog-listing-big .post .author-category a,
 #blog-homepage .post .author-category a {
-  font-weight: 600;
+  font-weight: 500;
 }
 #blog-listing-big .post .date-comments a,
 #blog-homepage .post .date-comments a {
@@ -2000,7 +2075,7 @@ fieldset[disabled] .btn-template-primary.active {
   letter-spacing: 0.08em;
 }
 #blog-listing-medium .post .author-category a {
-  font-weight: 600;
+  font-weight: 500;
 }
 #blog-listing-medium .post .date-comments {
   float: right;
@@ -2077,7 +2152,7 @@ fieldset[disabled] .btn-template-primary.active {
   font-size: 12px;
 }
 .box-image-text.blog .author-category a {
-  font-weight: 600;
+  font-weight: 500;
 }
 .box-image-text.blog .intro {
   text-align: left;
@@ -2122,7 +2197,7 @@ fieldset[disabled] .btn-template-primary.active {
   font-size: 12px;
 }
 #blog-post .comment .reply {
-  font-family: $base-font, Helvetica, Arial, sans-serif;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
 }
 #blog-post .comment.last {
   margin-bottom: 0;
@@ -2274,7 +2349,7 @@ fieldset[disabled] .btn-template-primary.active {
   color: #555555;
   text-align: center;
   text-decoration: none;
-  font-family: $base-font, Helvetica, Arial, sans-serif;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
 }
 #productMain .sizes a.active,
 #productMain .sizes a:hover {
@@ -2449,7 +2524,7 @@ fieldset[disabled] .btn-template-primary.active {
 }
 #footer h4 {
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.08em;
 }
@@ -2580,7 +2655,7 @@ fieldset[disabled] .btn-template-primary.active {
 /* Original Boostrap template overwrite */
 /* breadcrumbs */
 .breadcrumb {
-  font-family: $base-font, Helvetica, Arial, sans-serif;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   background-color: none;
   letter-spacing: 0.08em;
@@ -3005,7 +3080,7 @@ fieldset[disabled] .btn-template-primary.active {
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
   color: #555555;
-  background-color: #FFB499;
+  background-color: #80cbd9;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
@@ -3081,8 +3156,8 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 }
 /* scaffolding */
 body {
-  font-family: $base-font, Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 14px;
   line-height: 1.42857143;
   color: #555555;
 }
@@ -3159,7 +3234,7 @@ hr {
 }
 /* labels */
 .label {
-  font-family: $base-font, Helvetica, Arial, sans-serif;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-weight: normal;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -3189,7 +3264,7 @@ label {
   padding-top: 20px;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  font-family: $base-font, Helvetica, Arial, sans-serif;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
 }
 .pager li {
   display: inline;
@@ -3217,7 +3292,7 @@ label {
 /* pagination */
 .pagination {
   margin: 20px 0;
-  font-family: $base-font, Helvetica, Arial, sans-serif;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
   border-radius: 0;
 }
 .pagination > li > a,
@@ -3292,7 +3367,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: $base-font, Helvetica, Arial, sans-serif;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-weight: 900;
   line-height: 1.1;
   color: #333333;
@@ -3485,4 +3560,3 @@ a.list-group-item.active > .badge,
   left: 15px;
   right: 15px;
 }
-
