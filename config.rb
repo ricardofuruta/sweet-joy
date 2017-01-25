@@ -27,8 +27,14 @@ activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
   blog.name = "produtos"
   blog.prefix = "produtos"
+  blog.custom_collections = {
+      categoria: {
+      link: '/categorias/{categoria}.html',
+      template: '/categoria.html'
+    }
+  }
 
-  blog.permalink = "produtos/{categoria}/{title}.html"
+  blog.permalink = "{categoria}/{title}.html"
   # Matcher for blog source files
   blog.sources = "data/{day}-{month}-{year}-{title}.html"
   # blog.taglink = "tags/{tag}.html"
@@ -39,7 +45,7 @@ activate :blog do |blog|
   # blog.month_link = "{year}/{month}.html"
   # blog.day_link = "{year}/{month}/{day}.html"
   # blog.default_extension = ".markdown"
-  blog.new_article_template = "source/blog-template/product_template.erb"
+  blog.new_article_template = "source/templates/product_template.erb"
   # blog.tag_template = "tag.html"
   # blog.calendar_template = "calendar.html"
 

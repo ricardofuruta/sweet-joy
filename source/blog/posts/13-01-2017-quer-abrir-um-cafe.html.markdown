@@ -1,5 +1,6 @@
 ---
 title: Quer Abrir um Cafe? Confira os Principais Erros a Evitar
+blog: blog
 data: 2017-01-13 14:00 UTC
 youtubecode:
 textointro: "Confira a seguir uma seleção dos erros mais comuns dos novatos no mundo dos negócios. Fuja deles e conquiste uma clientela fiel!"
@@ -7,6 +8,7 @@ image: regret.jpg
 autor: "Joy Alves"
 categoria: Negocios
 tags: empreendedorismo, café, negócio
+published: false
 ---
 
 ## Seja atrativo

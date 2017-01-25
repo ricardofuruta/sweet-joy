@@ -1,7 +1,38 @@
+
+<!-- *** TOP ***
+_________________________________________________________ -->
+<div id="top">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-7 contact">
+                <p class="hidden-xs">Contate-nos:  <i class="fa fa-whatsapp" aria-hidden="true"></i> 41 96937334 ou <i class="fa fa-envelope-square"  aria-hidden="true"></i> adm@sweetjoy.com.br</p>
+                <!-- <p class="hidden-md hidden-lg"><a href="#" data-animate-hover="pulse"><i class="fa fa-phone"></i></a>  <a href="#" data-animate-hover="pulse"><i class="fa fa-envelope"></i></a>
+                </p> -->
+            </div>
+            <div class="col-xs-5">
+                <div class="social">
+                    <a href="#" class="external facebook" data-animate-hover="pulse"><i class="fa fa-facebook"></i></a>
+                    <a href="#" class="external twitter" data-animate-hover="pulse"><i class="fa fa-instagram"></i></a>
+                    <a href="#" class="external gplus" data-animate-hover="pulse"><i class="fa fa-pinterest"></i></a>
+                    <a href="#" class="email" data-animate-hover="pulse"><i class="fa fa-envelope"></i></a>
+                </div>
+
+<!--                 <div class="login">
+                    <a href="#" data-toggle="modal" data-target="#login-modal"><i class="fa fa-sign-in"></i> <span class="hidden-xs text-uppercase">Sign in</span></a>
+                    <a href="customer-register.html"><i class="fa fa-user"></i> <span class="hidden-xs text-uppercase">Sign up</span></a>
+                </div> -->
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- *** TOP END *** -->
+
 <div class="navbar-wagon">
   <!-- Logo -->
   <% link_to "/", class: "navbar-wagon-brand" do %>
-    <%= image_tag "logo.png" %>
+    <%= image_tag "logo-website.png" %>
   <% end %>
 
   <!-- Right Navigation -->
@@ -16,13 +47,13 @@
     </form> -->
 
     <!-- Text link -->
-    <a href="https://www.lewagon.com" class="navbar-wagon-item navbar-wagon-link">Encomendas</a>
+    <%= link_to "Encomendas", '/produtos', class:"navbar-wagon-item navbar-wagon-link"%>
 
     <!-- Text link -->
     <%= link_to "Blog", '/blog', class:"navbar-wagon-item navbar-wagon-link"%>
 
     <!-- Text link -->
-    <a href="" class="navbar-wagon-item navbar-wagon-link">Contato</a>
+    <%= link_to "Sobre Nós", 'sobre-nos', class:"navbar-wagon-item navbar-wagon-link"%>
 
 
     <!-- Notification link-->
