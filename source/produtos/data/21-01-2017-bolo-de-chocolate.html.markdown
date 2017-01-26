@@ -5,7 +5,7 @@ data: 21/01/17
 image: [bolochocolate.jpg]
 image_title: ["Para os amantes de chocolate"]
 category: bolos
-tags: bolo, chocolate
+tags: bolos
 published: false
 descrição: Bolo coberto de granulado, com massa de chocolate e recheio de brigadeiro meio amargo
 preço: A partir de R$ 70

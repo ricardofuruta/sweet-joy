@@ -5,7 +5,7 @@ data: 21/01/17
 image: [bolocolorido.jpg]
 image_title: ["Uma explosão de sabores"]
 category: bolos
-tags: bolo, colorido
+tags: bolos
 published: false
 descrição: Bolo com confeito colorido, massa de baunilha e recheio de doce de leite.
 preço: A partir de R$ 70

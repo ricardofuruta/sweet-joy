@@ -5,7 +5,7 @@ data: 21/01/17
 image: [brigadeiros.jpg]
 image_title: ["Eleito o melhor de Curitiba"]
 category: brigadeiros
-tags: brigadeiro, melhor, gourmet, festa
+tags: brigadeiros
 published: false
 descrição: 'Escolha até cinco sabores diferentes de brigadeiro e monte sua caixa'
 preço: R$ 190

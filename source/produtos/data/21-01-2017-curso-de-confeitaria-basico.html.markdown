@@ -5,7 +5,7 @@ data: 21/01/17
 image: [cursos.jpg]
 image_title: ["Aprenda a arte da confeitaria"]
 category: cursos
-tags: curso, confeitaria, basico
+tags: cursos
 published: false
 descrição: Aprenda os conceitos Básicos da Confeitaria.
 preço: R$ 200
