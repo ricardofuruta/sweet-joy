@@ -6,7 +6,7 @@ image: [brigadeiros.jpg]
 image_title: ["Eleito o melhor de Curitiba"]
 category: brigadeiros
 tags: brigadeiros
-published: false
+published: true
 descrição: 'Escolha até cinco sabores diferentes de brigadeiro e monte sua caixa'
 preço: R$ 190
 ---

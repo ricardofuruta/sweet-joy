@@ -6,7 +6,7 @@ image: [bolokitkat.jpg, bolokitkat2.jpg, bolokitkat3.jpg]
 image_title: ["O bolo mais desejado", "Massa fofinha e recheio cremoso", "As crianças adoram!"]
 category: bolos
 tags: bolos
-published: false
+published: true
 descrição: 'Bolo coberto de Kit Kat com recheio de brigadeiro'
 preço: A partir de R$ 90
 Tamanhos: P, M, G

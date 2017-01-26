@@ -1,13 +1,13 @@
 ---
-nome: Bolo de Chocolate
+nome: Bolo Colorido
 blog: produtos
 data: 21/01/17
-image: [bolochocolate.jpg]
-image_title: ["Para os amantes de chocolate"]
+image: [bolocolorido.jpg]
+image_title: ["Uma explosão de sabores"]
 category: bolos
 tags: bolos
-published: false
-descrição: Bolo coberto de granulado, com massa de chocolate e recheio de brigadeiro meio amargo
+published: true
+descrição: Bolo com confeito colorido, massa de baunilha e recheio de doce de leite.
 preço: A partir de R$ 70
 ---
 

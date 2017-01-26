@@ -6,7 +6,7 @@ image: [brownies.jpg]
 image_title: ["Uma delícia"]
 category: lembrancinhas
 tags: lembrancinhas
-published: false
+published: true
 descrição: "Brownies recheados com brigadeiro"
 preço: R$ 5
 ---
