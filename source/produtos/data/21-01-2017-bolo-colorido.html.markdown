@@ -4,7 +4,7 @@ blog: produtos
 data: 21/01/17
 image: [bolocolorido.jpg]
 image_title: ["Uma explosão de sabores"]
-categoria: bolos
+category: bolos
 tags: bolo, colorido
 published: false
 descrição: Bolo com confeito colorido, massa de baunilha e recheio de doce de leite.

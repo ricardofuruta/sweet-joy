@@ -6,7 +6,7 @@ youtubecode:
 textointro: "Selecionamos 05 locais imperdíveis em Curitiba para os amantes da gastronomia."
 image: "sweet-joy-cafe-confeitaria.jpg"
 autor: "Joy Alves"
-categoria: Avaliações
+category: Avaliações
 tags: avaliação, review, cafe, curitiba, melhores
 published: true
 ---

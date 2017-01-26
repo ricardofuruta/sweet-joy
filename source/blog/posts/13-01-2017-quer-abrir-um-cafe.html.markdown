@@ -6,7 +6,7 @@ youtubecode:
 textointro: "Confira a seguir uma seleção dos erros mais comuns dos novatos no mundo dos negócios. Fuja deles e conquiste uma clientela fiel!"
 image: regret.jpg
 autor: "Joy Alves"
-categoria: Negocios
+category: Negocios
 tags: empreendedorismo, café, negócio
 published: false
 ---

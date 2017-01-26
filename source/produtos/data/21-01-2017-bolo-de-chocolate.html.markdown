@@ -4,7 +4,7 @@ blog: produtos
 data: 21/01/17
 image: [bolochocolate.jpg]
 image_title: ["Para os amantes de chocolate"]
-categoria: bolos
+category: bolos
 tags: bolo, chocolate
 published: false
 descrição: Bolo coberto de granulado, com massa de chocolate e recheio de brigadeiro meio amargo

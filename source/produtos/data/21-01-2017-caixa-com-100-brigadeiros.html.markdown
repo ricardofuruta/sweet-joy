@@ -4,7 +4,7 @@ blog: produtos
 data: 21/01/17
 image: [brigadeiros.jpg]
 image_title: ["Eleito o melhor de Curitiba"]
-categoria: brigadeiros
+category: brigadeiros
 tags: brigadeiro, melhor, gourmet, festa
 published: false
 descrição: 'Escolha até cinco sabores diferentes de brigadeiro e monte sua caixa'

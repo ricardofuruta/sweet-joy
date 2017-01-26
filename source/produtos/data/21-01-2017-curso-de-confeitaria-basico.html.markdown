@@ -4,7 +4,7 @@ blog: produtos
 data: 21/01/17
 image: [cursos.jpg]
 image_title: ["Aprenda a arte da confeitaria"]
-categoria: cursos
+category: cursos
 tags: curso, confeitaria, basico
 published: false
 descrição: Aprenda os conceitos Básicos da Confeitaria.

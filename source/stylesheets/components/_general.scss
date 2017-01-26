@@ -1731,7 +1731,7 @@ fieldset[disabled] .btn-template-primary.active {
   border: none;
 }
 #heading-breadcrumbs {
-  background: url('../images/pattern5.png') center center repeat;
+  background: url(image-path('pattern5.png')) center center repeat;
   padding: 20px 0;
   margin-bottom: 40px;
 }
@@ -1761,7 +1761,7 @@ fieldset[disabled] .btn-template-primary.active {
   padding: 15px 0;
 }
 .bar.background-pentagon {
-  background: url('../images/pattern5.png') center center repeat;
+  background: url(image-path('pattern5.png')) center center repeat;
   border-top: solid 1px #999999;
   border-bottom: solid 1px #999999;
 }
@@ -1775,12 +1775,12 @@ fieldset[disabled] .btn-template-primary.active {
   background: #fff;
 }
 .bar.background-image-fixed-1 {
-  background: url("../images/bolokitkat2.jpg") center top no-repeat;
+  background: url(image-path('bolokitkat2.jpg')) center top no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
 .bar.background-image-fixed-2 {
-  background: url("../images/bolokitkat2.jpg") center top no-repeat;
+  background: url(image-path('bolokitkat2.jpg')) center top no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
