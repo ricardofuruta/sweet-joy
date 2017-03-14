@@ -2,16 +2,16 @@
 nome: Curso de Confeitaria Basico
 blog: produtos
 data: 21/01/17
-image: [cursos.jpg]
+image: [joicy.jpg]
 image_title: ["Aprenda a arte da confeitaria"]
 category: cursos
 tags: cursos
 published: true
 descrição: Aprenda os conceitos Básicos da Confeitaria.
-preço: R$ 200
+preço: em breve
 ---
 
-## Módulos
-1. Como fazer uma massa
-2. Como fazer o recheio
-3. Como montar o bolo 
+#Confeitaria
+Em breve teremos novidades com novos cursos para aspirantes a confeiteiros.  
+Fazemos montagem de menus de doces para hotéis, confeitarias e cafeterias.  
+Entre em contato.

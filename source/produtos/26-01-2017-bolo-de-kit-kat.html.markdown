@@ -8,18 +8,18 @@ category: bolos
 tags: bolos
 published: true
 descrição: 'Bolo coberto de Kit Kat com recheio de brigadeiro'
-preço: A partir de R$ 90
+preço: A partir de R$ 100
 Tamanhos: P, M, G
 Recheios: Brigadeiro, Chocolate, Baunilha
 ---
 
-## Preços
-P: R$ 70
-M: R$ 100
-G: R$ 120
+#### Tamanhos
+P: R$ 100 (12 fatias)  
+M: R$ 160 (24 fatias)  
+G: R$ 200 (38 fatias)  
 
-## Opções de Recheio(escolha 2):
-Brigadeiro, Chocolate, Baunilha e Morango.
+#### Opções de Recheio (até 2):
+Brigadeiro Ao Leite, Brigadeiro Branco, Baunilha, Nutella, Paçoca.
 
-### Opções de Massa:
-Chocolate, Baunilha, Red Velvet.
+#### Opções de Massa:
+Chocolate, Baunilha.
