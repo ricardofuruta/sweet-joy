@@ -1,0 +1,23 @@
+---
+nome: Chocopop
+blog: product
+data: 14/03/17
+image: [chocopop1.jpg, chocopop2.jpg, chocopop3.jpg]
+image_title: ["Chocopop Sweet Joy", "Pipoca coberta com Chocolate", "Chocopop Sweet Joy"]
+category: lembrancinhas
+tags: lembrancinhas, chocopop, pipoca coberta com chocolate
+published: true
+descrição: "Pipoca Coberta com Chocolate"
+preço: R$ 12
+---
+#### Pedído mínimo
+10 unidades
+
+#### Personalização:
+Personalização de embalagem: +R$ 1 por unidade.
+
+#### Validade
+10 dias
+
+#### Antecedência
+Pedimos que os pedidos sejam feitos com no mínimo 02 dias de antecedência. 

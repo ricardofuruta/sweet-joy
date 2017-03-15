@@ -11,7 +11,9 @@ descrição: Aprenda os conceitos Básicos da Confeitaria.
 preço: em breve
 ---
 
-#Confeitaria
-Em breve teremos novidades com novos cursos para aspirantes a confeiteiros.  
+####Aguardem
+Em breve teremos novidades com novos cursos para aspirantes a confeiteiros.
+
+####Consultoria
 Fazemos montagem de menus de doces para hotéis, confeitarias e cafeterias.  
 Entre em contato.

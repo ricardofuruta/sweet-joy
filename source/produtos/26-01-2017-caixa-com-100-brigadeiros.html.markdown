@@ -30,3 +30,9 @@ Limão Siciliano,
 Nozes,
 Crispy Branco,
 Crispy Ao leite,
+
+#### Validade
+Os brigadeiros a partir de 5 dias começam a ficar mais durinhos, porém, ainda estarão aptos para consumo.
+
+#### Antecedência
+Pedimos que os pedidos sejam feitos com no mínimo 01 dia de antecedência. 

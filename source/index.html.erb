@@ -11,27 +11,25 @@ _________________________________________________________ -->
 
         <div class="container full-width">
             <div class="homepage owl-carousel">
-                <div class="item item-carousel" style="background: url('/images/brigadeiros.jpg') center center repeat;background-size: cover">
+                <div class="item item-carousel" style="background: url('images/brigadeirovo1.jpg') center center repeat;background-size: cover"">
                     <div class="row">
                         <div class="col-sm-5 text-center">
+                          <% link_to category_path('pascoa','produtos') do %>
                             <div class = background-opacity>
-                              <p>
-  <!--                                 <%= image_tag "logo.png", style:'center'%> -->
-                              </p>
                               <div class='titulo-banner'>
-                                <h1 class='item1'>Brigadeiros</h1>
-                               </div>
-                              <p>10 sabores diferentes.
-                                  <br />Eleito o melhor de Curitiba.</p>
+                                <h1 class="item1">Páscoa</h1>
+                                <p>Conheça o brigadeirovo, uma delícia de 420 gramas de chocolate recheado com brigadeiro cremoso.</p>
+                              </div>
                             </div>
+                          <% end %>
                         </div>
                         <div class="col-sm-7">
-                            <!-- <img class="img-responsive" src="img/template-homepage.png" alt=""> -->
-
+                            <!-- <img class="img-responsive" src="img/template-easy-customize.png" alt=""> -->
+<!--                             <%= image_tag "template-easy-customize.png", class:"img-responsive" %> -->
                         </div>
                     </div>
                 </div>
-                <div class="item item-carousel" style="background: url('images/mesa-festa.jpg') center center repeat;background-size: cover"">
+                <div class="item item-carousel" style="background: url('images/brownies.jpg') center center repeat;background-size: cover"">
                     <div class="row">
 
                         <div class="col-sm-3 text-center">
@@ -40,45 +38,56 @@ _________________________________________________________ -->
                         </div>
 
                         <div class="col-sm-9 text-center">
-                          <div class = background-opacity>
-                            <div class='titulo-banner'>
-                              <h1 class="item1">Trabalho com paixão</h1>
-                              <p>Assista a como são produzidos nossos doces</p>
+                          <% link_to category_path('lembrancinhas','produtos') do %>
+                            <div class = background-opacity>
+                              <div class='titulo-banner'>
+                                <h1 class="item1">Lembrancinhas</h1>
+                                <p>Nossos doces personalizados para sua festa ou evento.</p>
+                              </div>
                             </div>
-                          </div>
+                          <% end %>
                         </div>
 
                     </div>
                 </div>
-                <div class="item item-carousel" style="background: url('images/bolokitkat.jpg') center center repeat;background-size: cover"">
-                    <div class="row">
-                        <div class="col-sm-5 text-center">
-                          <div class = background-opacity>
-                            <div class='titulo-banner'>
-                              <h1 class="item1">Bolos</h1>
-                              <p>Escolha entre 10 modelos de bolos diferentes</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-sm-7">
-                            <!-- <img class="img-responsive" src="img/template-easy-customize.png" alt=""> -->
-<!--                             <%= image_tag "template-easy-customize.png", class:"img-responsive" %> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="item item-carousel" style="background: url('images/cursos.jpg') center center repeat;background-size: cover"">
+
+                <div class="item item-carousel" style="background: url('/images/brigadeiros.jpg') center center repeat;background-size: cover"">
                     <div class="row">
                         <div class="col-sm-7">
                             <!-- <img class="img-responsive" src="img/template-easy-code.png" alt=""> -->
                             <!-- <%= image_tag "template-easy-code.png", class:"img-responsive" %> -->
                         </div>
                         <div class="col-sm-5 text-center">
-                          <div class = background-opacity>
-                            <div class='titulo-banner'>
-                              <h1 class="item1">Cursos</h1>
-                              <p>Aprimore sua técnica e comece a ganhar dinheiro fazendo o que mais gosta</p>
+                          <% link_to category_path('brigadeiros','produtos') do %>
+                            <div class = background-opacity>
+                              <div class='titulo-banner'>
+                                <h1 class="item1">Brigadeiros</h1>
+                                <p>16 sabores diferentes.
+                                    <br />Eleito o melhor de Curitiba pela Revista Veja.</p>
+                              </div>
                             </div>
-                          </div>
+                          <% end %>
+                        </div>
+                    </div>
+                </div>
+                <div class="item item-carousel" style="background: url('images/bolokitkat.jpg') center center repeat;background-size: cover">
+                    <div class="row">
+                        <div class="col-sm-5 text-center">
+                          <% link_to category_path('bolos','produtos') do %>
+                            <div class = background-opacity>
+                              <p>
+  <!--                                 <%= image_tag "logo.png", style:'center'%> -->
+                              </p>
+                              <div class='titulo-banner'>
+                                <h1 class='item1'>Bolos</h1>
+                               </div>
+                              <p>Os bolos mais deliciosos de Curitiba.</p>
+                            </div>
+                          <% end %>
+                        </div>
+                        <div class="col-sm-7">
+                            <!-- <img class="img-responsive" src="img/template-homepage.png" alt=""> -->
+
                         </div>
                     </div>
                 </div>
@@ -95,6 +104,7 @@ _________________________________________________________ -->
         <div class="col-md-12">
             <div class="row">
                 <div class="col-md-4">
+                  <% link_to '/produtos' do %>
                     <div class="box-simple">
                         <div class="icon">
                             <i class="fa fa-birthday-cake"></i>
@@ -102,8 +112,10 @@ _________________________________________________________ -->
                         <h3>Encomenda de Doces</h3>
                         <p>Brigadeiros, bolos e outros docinhos para festa. Faça sua encomenda</p>
                     </div>
+                  <% end %>
                 </div>
                 <div class="col-md-4">
+                  <% link_to blog("produtos").articles.select{ |i| i.data.nome == "Curso de Confeitaria Basico" }.first.url do %>
                     <div class="box-simple">
                         <div class="icon">
                             <i class="fa fa-graduation-cap"></i>
@@ -111,8 +123,10 @@ _________________________________________________________ -->
                         <h3>Cursos</h3>
                         <p>Cursos de confeitaria com a Chef Joy Alves</p>
                     </div>
+                  <% end %>
                 </div>
                 <div class="col-md-4">
+                  <% link_to "/sobre-nos" do %>
                     <div class="box-simple">
                         <div class="icon">
                             <i class="fa fa-smile-o"></i>
@@ -120,6 +134,7 @@ _________________________________________________________ -->
                         <h3>100% Satisfação Garantida</h3>
                         <p>A sua satisfação é a nossa prioridade máxima.</p>
                     </div>
+                  <% end %>
                 </div>
             </div>
         </div>
@@ -136,75 +151,20 @@ _________________________________________________________ -->
             <div class="col-md-12">
                 <div class="icon icon-lg"><i class="fa fa-gift"></i>
                 </div>
-                <h3 class="text-uppercase">Aprenda a fazer um bolo como este de graça</h3>
-                <p class="lead">Cadastre-se e ganhe um curso gratuito de como fazer o bolo de Kit Kat recheado com brigadeiro.</p>
+                <h3 class="text-uppercase">Promoção: Pague 2 e Leve 3</h3>
+                <p class="lead">Pague 2 e leve 3 Brigadeirovos de 420 gramas.</p>
                 <p class="text-center">
-                    <a href="index2.html" class="btn btn-template-transparent-black btn-lg">E-mail</a>
+                  <%= link_to "Confira", blog("produtos").articles.select{ |i| i.data.nome == "Brigadeirovo" }.first.url, class:"btn btn-template-transparent-black btn-lg" %>
                 </p>
             </div>
 
         </div>
     </div>
 </section>
-
-<section class="bar background-white no-mb">
-    <div class="container">
-
-        <div class="col-md-12">
-            <div class="heading text-center">
-                <h2>Blog da Joy</h2>
-            </div>
-            <p class="lead">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies
-                mi vitae est. Mauris placerat eleifend leo. <%= link_to "Confira nosso blog!", '/blog', class:"accent"%>
-            </p>
-
-            <!-- *** BLOG HOMEPAGE ***
-_________________________________________________________ -->
-
-            <div class="row">
-
-                <% blog("blog").articles[0..3].each do |article| %>
-
-                  <div class="col-md-3">
-                      <div class="box-image-text blog">
-                          <div class="top">
-                              <div class="image">
-                                  <%= thumb_tag article.data.image, '690x460#', class:"img-responsive" %>
-                              </div>
-                              <div class="bg"></div>
-                              <div class="text">
-                                  <p class="buttons">
-                                     <!--  <a href="blog-post.html" class="btn btn-template-transparent-primary"><i class="fa fa-link"></i> Leia Mais</a> -->
-                                    <% link_to article.url, class:"btn btn-template-transparent-primary" do %>
-                                      <i class="fa fa-link"></i> Leia Mais
-                                    <% end %>
-                                  </p>
-                              </div>
-                          </div>
-                          <div class="content">
-                              <h4><%= link_to article.title, article.url %></h4>
-                              <p class="author-category">Por <a href=""><%= article.data.autor %></a> em <a href="blog.html"> <%=article.data.category%></a>
-                              </p>
-                              <p class="intro"><%=article.data.textointro%></p>
-                              <p class="read-more">
-                                <%= link_to "Continue lendo", article.url, class:"btn btn-template-main" %>
-                              </p>
-                          </div>
-                      </div>
-                      <!-- /.box-image-text -->
-
-                  </div>
-                <% end %>
-
-            </div>
-            <!-- /.row -->
-            <!-- *** BLOG HOMEPAGE END *** -->
-        </div>
-
-    </div>
-    <!-- /.container -->
-</section>
-<!-- /.bar -->
+<div class="heading text-center">
+  <h2>Nossos Produtos</h2>
+</div>
+<%=partial "portfolio"%>
 <!-- *** GET IT ***
 _________________________________________________________ -->
 

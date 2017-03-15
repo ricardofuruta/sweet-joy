@@ -1,0 +1,103 @@
+<div id="content">
+    <div class="container">
+
+        <section>
+
+            <!-- <div class="row">
+                <div class="col-md-12">
+                    <div class="heading">
+                        <h2>Faça já sua encomenda</h2>
+                    </div>
+
+                    <p class="lead"><i class="fa fa-whatsapp" aria-hidden="true"></i> 41 996937334</p>
+                </div>
+            </div>
+ -->
+            <div class="row portfolio">
+
+                <div class="col-sm-6 col-md-3">
+                    <div class="box-image">
+                        <div class="image">
+                            <%= thumb_tag 'bolokitkat.jpg','750x500#', class:"img-responsive" %>
+                        </div>
+                        <div class="bg"></div>
+                        <div class="name">
+                            <h3><%= link_to "Bolos", category_path("bolos",'produtos')%></h3>
+                        </div>
+                        <div class="text">
+                            <p class="hidden-sm hidden-lg hidden-md">Os mais deliciosos bolos da cidade irão fazer da sua festa um sucesso.</p>
+                            <p class="buttons">
+                                <%= link_to 'Confira', category_path('bolos', 'produtos'), class:"btn btn-template-transparent-primary" %>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- /.box-image -->
+
+                </div>
+
+                <div class="col-sm-6 col-md-3">
+                    <div class="box-image">
+                        <div class="image">
+                            <%= thumb_tag 'brigadeiros.jpg', '750x500#', class:"img-responsive" %>
+                        </div>
+                        <div class="bg"></div>
+                        <div class="name">
+                            <h3><%= link_to "Brigadeiros", category_path("brigadeiros",'produtos')%></h3>
+                        </div>
+                        <div class="text">
+                            <p class="hidden-sm hidden-lg hidden-md">Escolha até cinco sabores diferentes de brigadeiro e monte sua caixa.</p>
+                            <p class="buttons">
+                                <%= link_to 'Confira', category_path('brigadeiros','produtos'), class:"btn btn-template-transparent-primary" %>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- /.box-image -->
+
+                </div>
+
+                <div class="col-sm-6 col-md-3">
+                    <div class="box-image">
+                        <div class="image">
+                            <%= thumb_tag 'brigadeirovo1.jpg','750x500#', class:"img-responsive" %>
+                        </div>
+                        <div class="bg"></div>
+                        <div class="name">
+                            <h3><%= link_to "Pascoa", category_path("pascoa",'produtos')%></h3>
+                        </div>
+                        <div class="text">
+                            <p class="hidden-sm hidden-lg hidden-md">Brigadeirovo Sweet Joy, Ovo de Páscoa Recheado com Brigadeiro Cremoso.</p>
+                            <p class="buttons">
+                                <%= link_to 'Confira', category_path('pascoa','produtos'), class:"btn btn-template-transparent-primary" %>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- /.box-image -->
+
+                </div>
+
+                <div class="col-sm-6 col-md-3">
+                    <div class="box-image">
+                        <div class="image">
+                            <%= thumb_tag 'mesa-festa.jpg','750x500#', class:"img-responsive" %>
+                        </div>
+                        <div class="bg"></div>
+                        <div class="name">
+                            <h3><%= link_to "Lembrancinhas", category_path("lembrancinhas",'produtos')%></h3>
+                        </div>
+                        <div class="text">
+                            <p class="hidden-sm hidden-lg hidden-md">Surpreenda seus convidados com as lembrancinhas mais gostosas.</p>
+                            <p class="buttons">
+                                <%= link_to 'Confira', category_path('lembrancinhas','produtos'), class:"btn btn-template-transparent-primary" %>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- /.box-image -->
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+    <!-- /.container -->
+</div>

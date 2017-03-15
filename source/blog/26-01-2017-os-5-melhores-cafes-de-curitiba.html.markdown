@@ -8,7 +8,7 @@ image: "sweet-joy-cafe-confeitaria.jpg"
 autor: "Joy Alves"
 category: Avaliações
 tags: avaliação, review, cafe, curitiba, melhores
-published: true
+published: false
 ---
 
 1. C La Vie Brasserie

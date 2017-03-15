@@ -29,12 +29,12 @@ activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
   blog.name = "produtos"
   blog.prefix = "produtos"
-  # blog.custom_collections = {
-  #     category: {
-  #     link: '/categorias/{category}.html',
-  #     template: '/category.html'
-  #   }
-  # }
+  blog.custom_collections = {
+      category: {
+      link: '/categorias/{category}.html',
+      template: '/category.html'
+    }
+  }
 
   blog.permalink = "{title}.html"
   # Matcher for blog source files

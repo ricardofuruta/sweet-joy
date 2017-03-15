@@ -1,0 +1,27 @@
+---
+nome: Brownies
+blog: produtos
+data: 15/03/2017
+image: [brownies.jpg, brownie2.jpg, brownie3.jpg]
+image_title: ["Brownie Recheado com Brigadeiro", Brownie Recheado com Doce de Leite, "Lembrancinha para Festas"]
+category: lembrancinhas
+tags: lembrancinhas, brownie recheado
+published: true
+descrição: "Brownies recheados com brigadeiro"
+preço: R$ 5
+---
+
+Brownies recheados com brigadeiro ou doce de leite.
+
+#### Pedído mínimo
+20 unidades
+
+#### Personalização:
+Escolha a sua cor de preferência ou envie-nos a imagem do tema da sua festa.
+Personalização: +R$ 1 por unidade.
+
+#### Validade
+04 dias
+
+#### Antecedência
+Pedimos que os pedidos sejam feitos com no mínimo 02 dias de antecedência. 
