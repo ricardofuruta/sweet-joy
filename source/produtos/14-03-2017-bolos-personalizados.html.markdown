@@ -11,4 +11,4 @@ descrição: "Bolos customizados para sua festa ou evento"
 preço: a partir de R$ 100
 ---
 
-Envie sua foto ou tema para nossa avaliação.
+Envie a foto de um bolo de sua preferência ou do tema de sua festa ou evento para nossa avaliação.

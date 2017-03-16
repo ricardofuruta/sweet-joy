@@ -39,7 +39,7 @@ activate :blog do |blog|
   blog.permalink = "{title}.html"
   # Matcher for blog source files
   blog.sources = "{day}-{month}-{year}-{title}.html"
-  blog.taglink = "categoria/{tag}.html"
+  # blog.taglink = "categoria/{tag}.html"
   blog.layout = "produto_layout"
   # blog.summary_separator = /(READMORE)/
   blog.summary_length = 250
@@ -48,7 +48,7 @@ activate :blog do |blog|
   # blog.day_link = "{year}/{month}/{day}.html"
   # blog.default_extension = ".markdown"
   blog.new_article_template = "source/templates/product_template.erb"
-  blog.tag_template = "category.html"
+  # blog.tag_template = "category.html"
   # blog.calendar_template = "calendar.html"
 
   # Enable pagination
