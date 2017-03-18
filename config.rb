@@ -29,17 +29,17 @@ activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
   blog.name = "produtos"
   blog.prefix = "produtos"
-  # blog.custom_collections = {
-  #     category: {
-  #     link: '/categorias/{category}.html',
-  #     template: '/category.html'
-  #   }
-  # }
+  blog.custom_collections = {
+      category: {
+      link: '/categorias/{category}.html',
+      template: '/category.html'
+    }
+  }
 
   blog.permalink = "{title}.html"
   # Matcher for blog source files
   blog.sources = "{day}-{month}-{year}-{title}.html"
-  blog.taglink = "categoria/{tag}.html"
+  # blog.taglink = "categoria/{tag}.html"
   blog.layout = "produto_layout"
   # blog.summary_separator = /(READMORE)/
   blog.summary_length = 250
@@ -48,7 +48,7 @@ activate :blog do |blog|
   # blog.day_link = "{year}/{month}/{day}.html"
   # blog.default_extension = ".markdown"
   blog.new_article_template = "source/templates/product_template.erb"
-  blog.tag_template = "category.html"
+  # blog.tag_template = "category.html"
   # blog.calendar_template = "calendar.html"
 
   # Enable pagination
@@ -134,6 +134,7 @@ configure :build do
 
   # Enable cache buster
   activate :asset_hash
+  activate :asset_host, :host => '//sweetjoy.com.br'
 
   # Use relative URLs
   activate :relative_assets
@@ -150,11 +151,11 @@ end
 # Deployment
 activate :deploy do |deploy|
   deploy.method = :git
-  # deploy.build_before = true
+  deploy.build_before = true
 
   # Optional Settings
-  # deploy.remote = 'custom-remote' # remote name or git url, default: origin
-  # deploy.branch = 'master' # default: gh-pages
+  deploy.remote = 'git@github.com:ricardofuruta/sweet-joy.git' # remote name or git url, default: origin
+  deploy.branch = 'gh-pages' # default: gh-pages
   # deploy.strategy = :submodule # commit strategy: can be :force_push or :submodule, default: :force_push
   # deploy.commit_message = 'custom-message' # commit message (can be empty), default: Automated commit at `timestamp` by middleman-deploy `version`
 end

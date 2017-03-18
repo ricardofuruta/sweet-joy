@@ -8,7 +8,7 @@ image: regret.jpg
 autor: "Joy Alves"
 category: Negocios
 tags: empreendedorismo, café, negócio
-published: true
+published: false
 ---
 
 ## Seja atrativo

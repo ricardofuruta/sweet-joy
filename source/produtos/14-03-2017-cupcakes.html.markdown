@@ -1,0 +1,21 @@
+---
+nome: Cupcakes
+blog: product
+data: 14/03/17
+image: [cupcake1.jpg, cupcake2.jpg, cupcake3.jpg, cupcake4]
+image_title: ["Cupcakes Sweet Joy", "Cupcakes de Brigadeiro Sweet Joy", "O melhor cupcake de Curitiba", "Caixa de Cupcakes"]
+category: bolos
+tags: bolos, cupcakes, cupcake sweet joy
+published: true
+descrição: "Os melhores cupcakes de Curitiba"
+preço: R$ 5,90
+---
+####Sabores
+Brigadeiro ao Leite, Cocada, Casadinho, Doce de Leite, Paçoca
+e Limão
+
+####Pedido mínimo
+20 cupcakes
+
+####Antecedência
+Pedimos que os pedidos sejam feitos com no mínimo 01 dia de antecedência. 

@@ -8,7 +8,7 @@ image: bolochocolate.jpg
 autor: "Joy Alves"
 category: receitas
 tags: bolo, chocolate, receita
-published: true
+published: false
 ---
 
 Bolo de chocolate mesmo simples, é irresistível e delicioso, fará quem provar querer dois, três pedaços. Se tiver crianças em casa então, é a receita perfeita para um fim de semana ou em qualquer ocasião, enfim, uma receitinha que não pode faltar na sua lista. Aprenda a fazer o bolo bem molhadinho com cobertura cremosa de chocolate ao leite condensado.
